@@ -1,6 +1,6 @@
-# Database Directory
+# LeetCode Solutions 🗽
 
-This directory contains SQL files categorized by difficulty level: `easy`, `medium`, and `hard`. These files can be used for practice, learning, or testing SQL queries.
+This repository contains solutions to LeetCode problems, organized by difficulty: `Easy`, `Medium`, and `Hard`.  
 
 ## Folder Description
 
