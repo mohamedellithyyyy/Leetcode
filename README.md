@@ -17,3 +17,7 @@ This repository contains solutions to LeetCode problems, organized by difficulty
 | 1741      | [*Find Total Time Spent by Each Employee*](https://leetcode.com/problems/find-total-time-spent-by-each-employee/description/?envType=problem-list-v2&envId=database)   | Easy       | SQL      | [1741.sql](easy/1741.sql) |
 | 2356      | [Number of Unique Subjects Taught by Each Teacher* ](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/description/?envType=problem-list-v2&envId=database) | Easy       | SQL      | [2356.sql](easy/2356.sql) |
 | 627       | [*Swap Sex of Employees* ](https://leetcode.com/problems/swap-sex-of-employees/description/?envType=problem-list-v2&envId=database)  | Easy       | SQL      | [627.sql](easy/627.sql) |
+|192|[*Word Frequency*](https://leetcode.com/problems/word-frequency/description/?envType=problem-list-v2&envId=shell)|Medium|Bash|[192.sh](medium/192.sh)|
+|193|[*Valid Phone Numbers*](https://leetcode.com/problems/valid-phone-numbers/description/?envType=problem-list-v2&envId=shell)|Easy|Bash|[193.sh](easy/193.sh)|
+|194|[*Transpose File*](https://leetcode.com/problems/transpose-file/description/?envType=problem-list-v2&envId=shell)|Medium|Bash|[194.sh](medium/194.sh)|
+|195|[*Tenth Line*](https://leetcode.com/problems/tenth-line/description/?envType=problem-list-v2&envId=shell)|Easy|Bash|[195.sh](easy/195.sh)|
