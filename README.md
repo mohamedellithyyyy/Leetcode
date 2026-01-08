@@ -23,3 +23,6 @@ This repository contains solutions to LeetCode problems, organized by difficulty
 |195|[*Tenth Line*](https://leetcode.com/problems/tenth-line/description/?envType=problem-list-v2&envId=shell)|Easy|Bash|[195.sh](easy/195.sh)|
 |69|[*Sqrt(x)*](https://leetcode.com/problems/sqrtx/?envType=problem-list-v2&envId=math)|Easy|Java|[69.java](esay/69.java)
 |175|[*Combine Two Tables*](https://leetcode.com/problems/combine-two-tables/?envType=problem-list-v2&envId=database)|Easy| SQL | [175.sql](easy/175.sql)
+
+
+##### didn't add 511 & 184 & 185
