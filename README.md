@@ -21,3 +21,4 @@ This repository contains solutions to LeetCode problems, organized by difficulty
 |193|[*Valid Phone Numbers*](https://leetcode.com/problems/valid-phone-numbers/description/?envType=problem-list-v2&envId=shell)|Easy|Bash|[193.sh](easy/193.sh)|
 |194|[*Transpose File*](https://leetcode.com/problems/transpose-file/description/?envType=problem-list-v2&envId=shell)|Medium|Bash|[194.sh](medium/194.sh)|
 |195|[*Tenth Line*](https://leetcode.com/problems/tenth-line/description/?envType=problem-list-v2&envId=shell)|Easy|Bash|[195.sh](easy/195.sh)|
+|69|[*Sqrt(x)*](https://leetcode.com/problems/sqrtx/?envType=problem-list-v2&envId=math)|Easy|Java|[69.java](esay/69.java)
