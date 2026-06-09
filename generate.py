@@ -8,34 +8,47 @@ ext_map = {
     ".js": "JavaScript"
 }
 
-def scan_repo():
-    lang = {}
-    total = 0
+def detect_language(file):
+    for ext, lang in ext_map.items():
+        if file.endswith(ext):
+            return lang
+    return "Unknown"
+
+
+def scan_files():
+    problems = []
 
     for root, _, files in os.walk("."):
         for f in files:
-            for ext, name in ext_map.items():
-                if f.endswith(ext):
-                    lang[name] = lang.get(name, 0) + 1
-                    total += 1
+            if any(f.endswith(ext) for ext in ext_map):
+                # skip system folders
+                if ".git" in root:
+                    continue
 
-    return total, lang
+                problem_id = f.split(".")[0]
+                lang = detect_language(f)
+                path = os.path.join(root, f).replace("./", "")
+
+                problems.append((problem_id, f, lang, path))
+
+    return sorted(problems)
 
 
-def build_stats(total, lang):
-    text = f"""
-- 🧩 Total Problems (Repo): **{total}**
+def build_table(problems):
+    table = """
+## 🧩 LeetCode Solutions Table
 
-- 💻 Languages:
+| # | Problem | Language | Solution |
+|--|--------|----------|----------|
 """
 
-    for k, v in lang.items():
-        text += f"  - {k}: {v}\n"
+    for pid, file, lang, path in problems:
+        table += f"| {pid} | {file} | {lang} | [view]({path}) |\n"
 
-    return text
+    return table
 
 
-def update_readme(content):
+def update_readme(table):
     with open("README.md", "r", encoding="utf-8") as f:
         data = f.read()
 
@@ -46,15 +59,15 @@ def update_readme(content):
         print("Missing README markers")
         return
 
-    new_data = data.split(start)[0] + start + "\n" + content + data.split(end)[1]
+    new_data = data.split(start)[0] + start + "\n" + table + "\n" + data.split(end)[1]
 
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(new_data)
 
 
 if __name__ == "__main__":
-    total, lang = scan_repo()
-    stats = build_stats(total, lang)
-    update_readme(stats)
+    problems = scan_files()
+    table = build_table(problems)
+    update_readme(table)
 
-    print("README updated")
+    print("Table generated 🚀")

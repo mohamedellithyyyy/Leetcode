@@ -5,7 +5,7 @@
 
 ---
 
-## 📊 Stats
+## 📊 Stats / Solutions
 
 <!-- STATS_START -->
 
