@@ -1,14 +1,14 @@
-name: LeetCode Full Sync
+name: LeetCode Auto Sync
 
 on:
   push:
-    branches: [master,main]
+    branches: [main, master]
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
 
 jobs:
-  sync:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,7 +23,10 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Run sync script
+      - name: Run LeetCode sync
+        run: python sync_leetcode.py
+
+      - name: Generate README
         run: python generate.py
 
       - name: Commit changes
