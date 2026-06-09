@@ -8,7 +8,15 @@
 ## 📊 Stats
 
 <!-- STATS_START -->
-<!-- STATS_END -->
+
+- 🧩 Total Problems (Repo): **20**
+
+- 💻 Languages:
+  - Python: 2
+  - Bash: 4
+  - PostgreSQL: 10
+  - Java: 4
+
 
 ---
 
